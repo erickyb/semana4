@@ -27,8 +27,7 @@ const ModalForm = ({
       createUser(data);
      }
    reset(defaultValues);
-    // createUser(data); 
-    // reset(defaultValues);
+
    };
 
   const handleClickClose = () => {

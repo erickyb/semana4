@@ -89,7 +89,7 @@
   /* nuevo */
   padding-left: 15px;
   position: absolute;
-  margin-top: -75px;
+  margin-top: -110px;
   z-index: -20;
   color: var(--color-text);
   transition: all 0.2s;

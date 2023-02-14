@@ -1,9 +1,10 @@
 import React from 'react'
 import UserCard from './UserCard'
+import "./style/UsersList.css"
 
 const UsersList = ({ users, deleteUser, setUpdatingUser,handleClickShowModal }) => {
   return (
-    <section>
+    <section className='UsersList__container'>
       {users.map((user) => (
         <UserCard
           key={user.id}
@@ -13,7 +14,9 @@ const UsersList = ({ users, deleteUser, setUpdatingUser,handleClickShowModal }) 
           handleClickShowModal={handleClickShowModal}
         />))
       }
-    </section>
+      
+     
+          </section>
   )
 }
 
