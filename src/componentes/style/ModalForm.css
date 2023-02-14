@@ -1,0 +1,129 @@
+.modalForm{
+  position:   fixed ;
+  background-color:rgba(245, 245, 245, 0.5);
+  top: 0;
+  height: 100vh;
+  left:0;
+  right: 0;
+  place-content: center;
+  display: none;
+}
+
+.activeForm{
+  display: grid;
+}
+
+.modalForm__Form{
+  background-color:rgba(204, 204, 204, 0.5);
+  padding: 20px;
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 4px;
+}
+
+.modalForm__title{
+
+  font-size: 30px;
+  margin:10px 0;
+}
+ .modalForm__x{
+  position:absolute;
+  top:10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+
+ }
+.modalForm__x{
+  color:var(--color-btn-x ) ;
+}
+
+
+.modalForm__div{
+  line-height: 30px;
+}
+
+
+ .modalForm__input {
+   width: 100%;
+   padding: 9px;
+   outline: none;
+   font-family: var(--principal-font);
+   border: 1px solid rgba(0, 0, 0, 0.5);
+   /*nuevo*/
+   margin-bottom: 40px;
+   background-color: transparent;
+   
+ }
+
+.modalForm__input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+ .modalForm___input{
+  width: 100%;
+  padding: 9px;
+  outline: none;
+  font-family: var(--principal-font);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /*nuevo*/
+  margin-bottom: 40px;
+  background-color:transparent
+ }
+.modalForm___input:focus{
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+/*EL FOCUS.- es cuando seleccionas un elementos de la pagina das diseño.
+(+) es cuando seeccones el el costado del  elecionado para hacer el diseño     */
+.modalForm___input:focus + .modalForm_label{
+  margin-top: -110px;
+}
+
+
+.modalForm__label {
+  display: block;
+  /* nuevo */
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -75px;
+  z-index: -20;
+  color: var(--color-text);
+  transition: all 0.2s;
+}
+
+.modalForm_label {
+  display: block;
+  /* nuevo */
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -75px;
+  z-index: -20;
+  color: var(--color-text);
+  transition: all 0.2s;
+}
+.modalForm__btn{
+  background-color: var(--color-btn);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor:pointer;
+  transition: background 200ms ease;
+  /* nuevo */
+  transition: color 300ms ease;
+  
+}
+.modalForm__btn:hover{
+background-color: var(--medio-color-btn);
+color: var(--color-btn);
+
+}
+
+.fijar{
+  margin-top: -110px ;
+}
